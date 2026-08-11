@@ -412,6 +412,12 @@
 
     .project .tags { margin-bottom: 1rem; }
 
+    .project-links {
+      display: flex;
+      gap: .9rem;
+      flex-wrap: wrap;
+    }
+
     .project-link {
       color: var(--text);
       text-decoration: none;
@@ -764,99 +770,102 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-    <div class="section-label">// 02. projects</div>
-    <h2 class="section-title">What I've Built</h2>
-    <div class="projects-grid">
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-sec">Security Tool</span>
-        <div class="project-title">SentinelCore</div>
-        <div class="project-desc">A Flask/Python network security scanning and vulnerability management platform. Runs real nmap scans, integrates with AWS/Azure/GCP, and can push SSH/WinRM-based remediation — backed by SQLAlchemy and a live web dashboard.</div>
-        <div class="project-tags">
-          <span class="project-tag">Flask</span>
-          <span class="project-tag">SQLAlchemy</span>
-          <span class="project-tag">Nmap</span>
-          <span class="project-tag">Docker</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/phantom2ace/SentinelCore" class="project-link">⌥ GitHub →</a>
-          <a href="https://sentinelcore-cur1.onrender.com" class="project-link">↗ Live</a>
-        </div>
-      </div>
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-research">Final Year Project</span>
-        <div class="project-title">Keystone Security Platform</div>
-        <div class="project-desc">Hybrid AI-powered SOC monitoring platform built as my capstone thesis — Suricata-based intrusion detection feeding a Flask API and Chart.js-driven dashboard for real-time threat visibility.</div>
-        <div class="project-tags">
-          <span class="project-tag">Suricata</span>
-          <span class="project-tag">Flask</span>
-          <span class="project-tag">Chart.js</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⌥ GitHub →</a>
-        </div>
-      </div>
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-dev">Full-Stack App</span>
-        <div class="project-title">Supermarket POS</div>
-        <div class="project-desc">A point-of-sale system built for a family member's supermarket. Handles multi-user roles, payment methods, loyalty points, and analytics, with Excel-based inventory import.</div>
-        <div class="project-tags">
-          <span class="project-tag">React</span>
-          <span class="project-tag">Express</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">SheetJS</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/phantom2ace/supermarket-pos" class="project-link">⌥ GitHub →</a>
-        </div>
-      </div>
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-dev">Full-Stack App</span>
-        <div class="project-title">OfficeHub</div>
-        <div class="project-desc">An office automation web app with modules for employees, tasks, documents, calendar, and finance — plus a WhatsApp-style real-time messaging feature built on Firebase.</div>
-        <div class="project-tags">
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">Express</span>
-          <span class="project-tag">SQLite</span>
-          <span class="project-tag">Firebase</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⌥ GitHub →</a>
-        </div>
-      </div>
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-dev">Full-Stack App</span>
-        <div class="project-title">Loretta Affordables</div>
-        <div class="project-desc">A Django ecommerce build for a freelance client, with wholesale/retail pricing tiers, Paystack payments, and Parcelman delivery integration across five Ghana regions.</div>
-        <div class="project-tags">
-          <span class="project-tag">Django</span>
-          <span class="project-tag">Paystack</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">Render</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⌥ GitHub →</a>
-        </div>
-      </div>
- 
-      <div class="project-card fade-in">
-        <span class="project-type type-research">Hackathon</span>
-        <div class="project-title">GreenRes Climate Network</div>
-        <div class="project-desc">Built for the GreenRes Hackathon (Africa Climate Collaborative × Mastercard Foundation) — a community-sourced climate anomaly network pulling in NASA FIRMS and Sentinel Hub satellite data onto a live map dashboard.</div>
-        <div class="project-tags">
-          <span class="project-tag">Django</span>
-          <span class="project-tag">NASA FIRMS</span>
-          <span class="project-tag">Sentinel Hub</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">⌥ GitHub →</a>
-        </div>
-      </div>
-       <article class="project reveal">
+      <div class="container">
+        <div class="eyebrow">// 02. projects</div>
+        <h2 class="section-title">What I've Built</h2>
+
+        <div class="projects-grid">
+
+          <article class="project reveal">
+            <div class="project-type">Security Tool</div>
+            <h3>SentinelCore</h3>
+            <p>A Flask/Python network security scanning and vulnerability management platform. Runs real nmap scans, integrates with AWS/Azure/GCP, and can push SSH/WinRM-based remediation — backed by SQLAlchemy and a live web dashboard.</p>
+            <div class="tags">
+              <span class="tag security">Flask</span>
+              <span class="tag security">SQLAlchemy</span>
+              <span class="tag security">Nmap</span>
+              <span class="tag security">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/phantom2ace/SentinelCore" class="project-link">GitHub →</a>
+              <a href="https://sentinelcore-cur1.onrender.com" class="project-link">Live →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-type">Final Year Project</div>
+            <h3>Keystone Security Platform</h3>
+            <p>Hybrid AI-powered SOC monitoring platform built as my capstone thesis — Suricata-based intrusion detection feeding a Flask API and Chart.js-driven dashboard for real-time threat visibility.</p>
+            <div class="tags">
+              <span class="tag security">Suricata</span>
+              <span class="tag security">Flask</span>
+              <span class="tag security">Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-type">Full-Stack App</div>
+            <h3>Supermarket POS</h3>
+            <p>A point-of-sale system built for a family member's supermarket. Handles multi-user roles, payment methods, loyalty points, and analytics, with Excel-based inventory import.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">SheetJS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/phantom2ace/supermarket-pos" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-type">Full-Stack App</div>
+            <h3>OfficeHub</h3>
+            <p>An office automation web app with modules for employees, tasks, documents, calendar, and finance — plus a WhatsApp-style real-time messaging feature built on Firebase.</p>
+            <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-type">Full-Stack App</div>
+            <h3>Loretta Affordables</h3>
+            <p>A Django ecommerce build for a freelance client, with wholesale/retail pricing tiers, Paystack payments, and Parcelman delivery integration across five Ghana regions.</p>
+            <div class="tags">
+              <span class="tag">Django</span>
+              <span class="tag">Paystack</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Render</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-type">Hackathon</div>
+            <h3>GreenRes Climate Network</h3>
+            <p>Built for the GreenRes Hackathon (Africa Climate Collaborative × Mastercard Foundation) — a community-sourced climate anomaly network pulling in NASA FIRMS and Sentinel Hub satellite data onto a live map dashboard.</p>
+            <div class="tags">
+              <span class="tag security">Django</span>
+              <span class="tag security">NASA FIRMS</span>
+              <span class="tag security">Sentinel Hub</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
             <div class="project-type">Security Lab</div>
             <h3>Personal Cybersecurity Lab</h3>
             <p>
@@ -870,11 +879,14 @@
               <span class="tag security">Wireshark</span>
               <span class="tag security">Windows server 2022</span>
             </div>
-            <span class="project-link">Hands-on lab →</span>
+            <div class="project-links">
+              <span class="project-link">Hands-on lab →</span>
+            </div>
           </article>
- 
-    </div>
-  </section>
+
+        </div>
+      </div>
+    </section>
 
     <!-- LEARNING -->
     <section id="learning" class="learning">
@@ -997,7 +1009,7 @@
     <section id="contact">
       <div class="container">
         <div class="eyebrow">// 06. contact</div>
-        <h2 class="section-title">Let's connect.</h2>li
+        <h2 class="section-title">Let's connect.</h2>
 
         <p class="contact-copy">
           I'm open to cybersecurity, networking, IT opportunities,
